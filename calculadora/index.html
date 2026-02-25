@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="display" readonly placeholder="0">
+        <div class="botoes">
+            <button onclick="limparDisplay()" class="limpar">C</button>
+            <button onclick="adicionarAoDisplay('+/-')" class="operador">+/-</button>
+            <button onclick="adicionarAoDisplay('%')" class="operador">%</button>
+            <button onclick="adicionarAoDisplay('/')" class="operador">/</button>
+            
+            <button onclick="adicionarAoDisplay('7')">7</button>
+            <button onclick="adicionarAoDisplay('8')">8</button>
+            <button onclick="adicionarAoDisplay('9')">9</button>
+            <button onclick="adicionarAoDisplay('*')" class="operador">×</button>
+            
+            <button onclick="adicionarAoDisplay('4')">4</button>
+            <button onclick="adicionarAoDisplay('5')">5</button>
+            <button onclick="adicionarAoDisplay('6')">6</button>
+            <button onclick="adicionarAoDisplay('-')" class="operador">-</button>
+            
+            <button onclick="adicionarAoDisplay('1')">1</button>
+            <button onclick="adicionarAoDisplay('2')">2</button>
+            <button onclick="adicionarAoDisplay('3')">3</button>
+            <button onclick="adicionarAoDisplay('+')" class="operador">+</button>
+            
+            <button onclick="adicionarAoDisplay('0')" style="grid-column: span 2;">0</button>
+            <button onclick="adicionarAoDisplay('.')">.</button>
+            <button onclick="calcular()" class="igual">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
